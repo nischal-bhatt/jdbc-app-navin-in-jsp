@@ -1,0 +1,82 @@
+mvc using servlet and jsp 
+
+jsp gets converted into servlet 
+
+jsp --> working with servlet 
+
+servlet is abit faster
+
+dont write business logic inside jsp 
+
+servlet is for processing 
+
+why use jsp when u have html ? jsp can generate dynamic pages
+
+jsp will have some static content and some dynamic content
+
+create a layout using jsp --> 
+
+when u request for a page --> u want jsp in return --> u r expecting the view 
+as a client u only care about the view 
+u just want the page 
+
+you want data in the view --> how to get data 
+
+lets say you send a request for /getPage --> this request will go to controller 
+
+controller will call view .. and view will be sent to client 
+somethign is missing 
+view dont have data
+
+controller will send data as well to the view ... it is an object POJO
+which is a model
+
+servlet is created with controller
+view is jsp
+model is java class POJO
+
+===============================
+
+
+processing should be done on controller or model 
+never perform operations in model object
+
+N Tier architecture in java
+
+controller connect to database --> but dont do it there directly 
+
+never write functionality in controller 
+
+controller call service--> service will call DAO --> which will in turn call the DB 
+
+client controller model view 
+
+
+=========================
+
+
+JSTL --> jsp standard tag library 
+
+why we use this .. 
+in jsp we write java code inside html 
+
+convert java into html like code 
+
+
+in this video we will talk about filters in servlets
+
+lets say we have client and server
+and on the server we have 3 servlets 
+
+whenever a client sends a request 
+request goes to web.xml and from there it goes to relevant servlet
+
+lets say for two of the servers you want to maintain logs
+
+instead of writing those things inside a and b, can we take it out?
+take common things out 
+the common thing can be plugged it in anywhere 
+
+we can add filter in between as the request goes to the server
+
+the filter will intercept the request
