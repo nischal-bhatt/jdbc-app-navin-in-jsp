@@ -84,3 +84,4 @@ the filter will intercept the request
 tomcat says that if you have multiple filters, yhou have to chain them
 filter chaining
 where to configure all these things? web.xml
+to create a filter create a class and extend something
