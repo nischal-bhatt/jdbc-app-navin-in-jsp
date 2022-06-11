@@ -80,3 +80,7 @@ the common thing can be plugged it in anywhere
 we can add filter in between as the request goes to the server
 
 the filter will intercept the request
+
+tomcat says that if you have multiple filters, yhou have to chain them
+filter chaining
+where to configure all these things? web.xml
